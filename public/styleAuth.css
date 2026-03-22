@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #e9e8c9;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
+
+.auth-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 700px;
+    background: #eceb8d;
+    border: 5px solid #000;
+    border-radius: 30px;
+    padding: 30px;
+    position: relative;
+    box-shadow: 18px 18px 0 #f0df63;
+}
+
+.auth-card h1 {
+    font-size: 3rem;
+    margin-bottom: 12px;
+    line-height: 1.1;
+}
+
+.auth-card p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.auth-card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-card label {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    margin-top: 10px;
+}
+
+.auth-card input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid #cfcfcf;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-bottom: 16px;
+    outline: none;
+}
+
+.auth-card button {
+    background: #2d2d2d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 14px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.auth-card a {
+    display: inline-block;
+    margin-top: 22px;
+    color: #3d3d3d;
+}

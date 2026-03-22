@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #e9e8c9;
+    min-height: 100vh;
+    padding: 30px;
+    color: #000;
+}
+
+.top-bar {
+    margin-bottom: 25px;
+}
+
+.logout-btn {
+    width: 70px;
+    height: 70px;
+    font-size: 2rem;
+    border: none;
+    border-radius: 12px;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.home-card {
+    background: #eceb8d;
+    border: 5px solid #000;
+    border-radius: 30px;
+    padding: 40px;
+    box-shadow: 18px 18px 0 #f0df63;
+}
+
+.home-card h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.notes-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.note-card,
+.add-card {
+    width: 280px;
+    min-height: 380px;
+    background: #f4f3dd;
+    box-shadow: 10px 10px 0 rgba(0,0,0,0.12);
+    padding: 22px;
+}
+
+.note-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.note-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    height: 180px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    white-space: pre-wrap;
+}
+
+.note-date {
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.note-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.note-actions button,
+.add-card button {
+    background: #f2dd62;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.note-actions button {
+    flex: 1;
+}
+
+.add-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    cursor: pointer;
+}
+
+.add-card .plus {
+    width: 72px;
+    height: 72px;
+    border-radius: 18px;
+    background: #000;
+    color: #fff;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-card p {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    z-index: 999;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal-content {
+    width: 100%;
+    max-width: 550px;
+    background: #eceb8d;
+    border: 4px solid #000;
+    border-radius: 25px;
+    box-shadow: 14px 14px 0 #f0df63;
+    padding: 24px;
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.modal-header h2 {
+    font-size: 2rem;
+}
+
+.close-btn {
+    background: #000;
+    color: #fff;
+    border: none;
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+#noteForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#noteForm label {
+    font-weight: 500;
+    margin-top: 6px;
+}
+
+#noteForm input,
+#noteForm textarea {
+    width: 100%;
+    border: 2px solid #cfcfcf;
+    border-radius: 10px;
+    padding: 12px 14px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+#noteForm textarea {
+    min-height: 180px;
+    resize: vertical;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.btn-cancel,
+.btn-save {
+    border: none;
+    padding: 12px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-cancel {
+    background: #d8d8d8;
+}
+
+.btn-save {
+    background: #f2dd62;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .home-card {
+        padding: 24px;
+    }
+
+    .home-card h1 {
+        font-size: 2.2rem;
+    }
+
+    .note-card,
+    .add-card {
+        width: 100%;
+        min-height: 320px;
+    }
+}

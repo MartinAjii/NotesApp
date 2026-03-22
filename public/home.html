@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyNotes</title>
+    <link rel="stylesheet" href="styleHome.css">
+</head>
+<body>
+    <div class="top-bar">
+        <button class="logout-btn" onclick="logout()">⬅</button>
+    </div>
+
+    <div class="home-card">
+        <h1>MyNotes</h1>
+        <div id="notesList" class="notes-grid"></div>
+    </div>
+
+    <div id="noteModal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Tambah Catatan</h2>
+                <button class="close-btn" onclick="closeModal()">✕</button>
+            </div>
+
+            <form id="noteForm">
+                <label for="judul">Judul</label>
+                <input type="text" id="judul" placeholder="Masukkan judul catatan">
+
+                <label for="isi">Catatan</label>
+                <textarea id="isi" placeholder="Masukkan isi catatan"></textarea>
+
+                <div class="modal-actions">
+                    <button type="button" class="btn-cancel" onclick="closeModal()">Batal</button>
+                    <button type="submit" class="btn-save">Simpan</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="scriptHome.js"></script>
+</body>
+</html>
