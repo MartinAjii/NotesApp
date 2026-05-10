@@ -1,5 +1,5 @@
 const user = JSON.parse(localStorage.getItem('user'));
-const API_NOTES = 'http://localhost:3000/api/notes';
+const API_NOTES = 'https://backend092-118865344431.asia-southeast2.run.app/api/notes';
 
 let editId = null;
 

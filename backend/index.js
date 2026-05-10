@@ -15,13 +15,12 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
-app.use(express.static('public'));
 
 app.use('/api', authRoutes);
 app.use('/api', notesRoutes);
 
 app.get("/", (req, res) => {
-    res.redirect('/login.html');
+    res.send("Backend Notes API Running Successfully");
 });
 
 Users.hasMany(Notes, { foreignKey: 'id_user' });

@@ -1,4 +1,4 @@
-const API_REGISTER = 'http://localhost:3000/api/register';
+const API_REGISTER = 'https://backend092-118865344431.asia-southeast2.run.app/api/register';
 
 document.getElementById('registerForm').addEventListener('submit', async function(e) {
     e.preventDefault();
