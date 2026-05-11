@@ -18,7 +18,7 @@ steps:
         "run",
         "deploy",
         "t3-092-be",
-        "--image",
+        "--image",  
         "gcr.io/$PROJECT_ID/t3-092-be",
         "--timeout",
         "1000s",
