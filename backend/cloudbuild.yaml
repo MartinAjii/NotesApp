@@ -6,7 +6,7 @@ steps:
             "gcr.io/$PROJECT_ID/t3-092-be",
             "-f",
             "backend/Dockerfile",
-            "backend"
+            "./backend"
           ]
 
   - name: "gcr.io/cloud-builders/docker"
